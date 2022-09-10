@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fundo: #181818;
+    --fundo-secundario: #202020;
+    --branco: #ffffff;
+    --branco-secundario: #8D8D8D;
+    --azul-youtube: #4989F2;
+    --vermelho-youtube: #df2f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--branco);
+    font-family: 'Montserrat' ,sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+header {
+    height: 3rem;
+    background-color: var(--fundo-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    width: 100%;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+}
+
+div.menus {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.menus-btnLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.menus #btnLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    width: 9rem;
+    background-color: var(--fundo-secundario);
+    border: 0.1rem solid var(--azul-youtube);
+    color: var(--azul-youtube);
+    
+}
+
+div.menus #i-user {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--azul-youtube);
+}
+
+div.menus #i-search {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+
+div.menus #i-menu-vertical {
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+main#vid {
+    max-width: 420px;
+    height: 100vh;
+    object-fit: none !important;
+
+}
+
+.ctn-lr {
+    margin: 0rem 1rem;  
+}
+
+a.link-video{
+    text-decoration: none;
+    color: var(--azul-youtube);
+    text-align: start;
+    padding: 0.2rem;
+    font-size: 80%;
+}
+
+figure {
+    width: 100%;
+    min-width: 420px;
+    margin: 0 auto;
+}
+
+figcaption {
+    font: 120% sans-serif;
+    text-align: start;
+    margin-top: 0.6rem;
+}
+
+#vid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.btnAcoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem 0rem;
+}
+
+div.btnStyleAcoes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div p.btnStyleAcoesText{
+    margin-top: 0.3rem;
+    font-size: 60%;
+}
+
+p.p-textGray{
+    margin: 0.3rem 0rem;
+    font-size: 70%;
+    color: var(--branco-secundario);
+    display: flex;
+    align-self: flex-start;
+}
+
+#i-like,
+#i-deslike,
+#i-compartilhar,
+#i-salvar,
+#i-denunciar{
+    cursor: pointer;
+}
+
+#perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 9999px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.inc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+#link-inscreva-se{
+    text-decoration: none;
+    color: var(--vermelho-youtube);
+    font-weight: 500;
+    display: flex;
+    align-self: flex-end;
+}
+
+#p-vid {
+    font: 80% sans-serif;
+    width: 100%;
+}
+.inc-vid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+}
+
+div.inc-name{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p.p-textGrayVid{
+    font-size: 50%;
+    color: var(--branco-secundario);
+    display: flex;
+    align-self: flex-start;
+}
